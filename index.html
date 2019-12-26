@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA Assignment</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/2.5.6/shaka-player.compiled.js"></script>
+    <script src="myapp.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+    <div class="header">
+        <center>
+            <h1>Sample Videos Page</h1>
+        </center>
+    </div>
+    <div class="body">
+     <table>
+     <tr>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video1" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg"                 src='http://rdmedia.bbc.co.uk/dash/ondemand/bbb/2/client_manifest-common_init.mpd'                     onclick="playvid('video1');">
+            </video>
+            <h3 id="h1"></h3>
+            <p id="p1"></p>
+            </center>
+           </div>
+         </td>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video2" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" onclick="playvid('video2')" src="https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+            </video>
+            <h3 id="h2"></h3>
+            <p id="p2"></p>
+            </center>
+           </div>
+         </td>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video3" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" onclick="playvid('video3')" src="https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+            </video>
+            <h3 id="h3"></h3>
+            <p id="p3"></p>
+            </center>
+           </div>
+         </td>
+     </tr>
+     <tr>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video4" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" onclick="playvid('video4')" onblur="stopvid('video4')" src="https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+            </video>
+            <h3 id="h4"></h3>
+            <p id="p4"></p>
+            </center>
+           </div>
+         </td>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video5" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" onclick="playvid('video5')" src="https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+            </video>
+            <h3 id="h5"></h3>
+            <p id="p5"></p>
+            </center>
+           </div>
+         </td>
+         <td>
+          <div class="vid">
+           <center>
+            <video id="video6" width="250" poster="//shaka-player-demo.appspot.com/assets/poster.jpg" onclick="playvid('video6')" src="https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd">
+            </video>
+            <h3 id="h6"></h3>
+            <p id="p6"></p>
+            </center>
+           </div>
+         </td>
+     </tr>
+     </table>
+    </div>
+    <div class="footer">
+        <center>
+            <p>Created by Varun.K</p>
+        </center>
+    </div>
+</body>
+</html>

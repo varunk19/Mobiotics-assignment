@@ -1,0 +1,47 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+}
+h1{
+    margin: 0px 0px 0px 0px;
+}
+h3{
+    margin: 10px 0px 0px 0px;
+}
+.header{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    background-color: purple;
+    font-family: cursive;
+    color: gold;
+    height:80px;
+    font-size: 25px;
+}
+.body{
+    padding: 33px 40px 33px 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+td{
+    padding: 20px 25px 20px 25px;
+}
+.vid{
+    padding: 15px 0px 5px 0px;
+    background-color: white;
+    width: 300px;
+    margin: 0px 0px 0px 0px;
+    height: 250px;
+}
+.footer{
+    background-color: darkslategrey;
+    color: gold;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+}
+p{
+    margin: 0px 0px 0px 0px;
+}
