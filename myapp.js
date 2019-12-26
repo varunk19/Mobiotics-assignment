@@ -32,8 +32,7 @@ function initApp(id)
 function initPlayer(id) 
 {
     var video = document.getElementById(id);
-    video.controls=true;
-    player = new shaka.Player(video);
+    var player = new shaka.Player(video);
     window.player = player;
     player.addEventListener('error', onErrorEvent);
     var manifestUri = video.src;
