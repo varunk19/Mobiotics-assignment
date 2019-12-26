@@ -1,4 +1,3 @@
-var player;
 window.onload=function()
 {
     var j;
@@ -8,26 +7,15 @@ window.onload=function()
             document.getElementById('p'+i).innerHTML="Desc: This is sample video #"+i;
         }
 }
-var old;
 function playvid(id)
 {
-    if(typeof old === "undefined")
+    var j;
+    for(var i=1;(j=document.getElementById('video'+i))!=null;i++)
     {
-        old=id;
-        initApp(id);
+        j.controls=false;
     }
-    else if(id!=old)
-    {
-        document.getElementById(old).player.unload();
-        document.getElementById(old).player.destroy();
-        old=id;
-        initApp(id);
-    }
-    else{
-        this.player.unload();
-        this.player.destroy();
-        initApp(id);
-    }
+    document.getElementById(id).controls=true;
+    initApp(id);
 }
 function initApp(id) 
 {
