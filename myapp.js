@@ -96,8 +96,9 @@ window.onload=function()
         j.setAttribute("onclick","playvid('video"+i+"')");
         j.setAttribute("onplay","pauseall('video"+i+"')");
     }
-    shaka.polyfill.installAll();
+    shaka.polyfill.installAll(); //installing Shaka player
 }
+
 function playvid(id) 
 {
     if (shaka.Player.isBrowserSupported()) 
@@ -114,6 +115,14 @@ function playvid(id)
         console.error('Browser not supported!');
     }
 }
+function pauseall(id)
+{
+    if(old != id && !(typeof old === "undefined"))
+            document.getElementById(old).pause();
+    old=id;
+}
+
+//code for Shaka player
 function initPlayer(id) 
 {
     var video = document.getElementById(id);
@@ -134,10 +143,4 @@ function onErrorEvent(event)
 function onError(error)
 {
   console.error('Error code', error.code, 'object', error);
-}
-function pauseall(id)
-{
-    if(old != id && !(typeof old === "undefined"))
-            document.getElementById(old).pause();
-    old=id;
 }
