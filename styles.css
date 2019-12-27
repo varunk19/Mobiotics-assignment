@@ -1,0 +1,62 @@
+body{
+    margin: 0px 0px 0px 0px;
+}
+h1{
+    font-size: 50px;
+    font-family: cursive;
+    color: gold;
+    margin: 0px 0px 0px 0px;
+}
+h3{
+    margin: 0px 0px 0px 0px;
+}
+.header{
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    background-color: purple;
+    height: auto;
+}
+.phone{
+    margin: 0px 0px 0px 0px;
+    padding: 3.1% 11.9% 3.1% 12.8%;
+    background-image: url(FBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.body{
+    padding: 1% 1% 0% 3%;
+    background-color: antiquewhite;
+    overflow: auto;
+    max-height: 580px;
+}
+td{
+    padding: 20px 25px 20px 25px;
+}
+.vid{
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+    width: 300px;
+    margin: 0px 0px 0px 0px;
+    height: 250px;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+.player{
+    background-color: black;
+    margin-bottom: 10px;
+    height: 180px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer{
+    background-color: darkslategrey;
+    color: gold;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+}
+p{
+    margin: 0px 0px 0px 0px;
+}
