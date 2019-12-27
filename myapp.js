@@ -1,3 +1,4 @@
+var old;
 window.onload=function()
 {
     //Creating the videos grid
@@ -103,11 +104,8 @@ function playvid(id)
     {
         document.getElementById(id).controls=true;
         document.getElementById(id).onclick=null;
-        var j;
-        for(var i=1;(j=document.getElementById('video'+i))!=null;i++)
-        {
-            j.pause();
-        }
+        if(old != id && !(typeof old === "undefined"))
+            document.getElementById(old).pause();
         initPlayer(id);
         document.getElementById(id).play();
     } 
@@ -139,10 +137,7 @@ function onError(error)
 }
 function pauseall(id)
 {
-    var j;
-    for(var i=1;(j=document.getElementById('video'+i))!=null;i++)
-    {
-        if(('video'+i)!=id)
-            j.pause();
-    }
+    if(old != id && !(typeof old === "undefined"))
+            document.getElementById(old).pause();
+    old=id;
 }
